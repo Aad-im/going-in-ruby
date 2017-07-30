@@ -2,7 +2,7 @@
 
 Coder Manual Project Application
 Subscription-based web application
-https//codemanual.com 
+https//codemanual.com
 
 Things you may want to cover:
 
