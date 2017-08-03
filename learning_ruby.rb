@@ -7,7 +7,7 @@ movies = { #the code to put in the terminal: ruby learning_ruby.rb
   Moana: 3.5,
 }
 
-puts "Type 'add', 'update', 'display',or 'delete.: "
+puts "Type 'add', 'update', 'display',or 'delete'"
 choice = gets.chomp
 
 case choice
