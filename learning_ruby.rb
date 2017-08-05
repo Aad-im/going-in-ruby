@@ -52,8 +52,7 @@ case choice
   end
   when "display"
     movies.each do |title, rating|
-      puts "
-      #{title}: #{rating}"
+      puts "#{title}: #{rating}"
   end
   
   when "delete"

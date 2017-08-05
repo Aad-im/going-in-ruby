@@ -25,7 +25,12 @@
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Contact Us", new_contact_path %></li>
+        <li>
+          <%= link_to new_contact_path do %>
+            <i class="glyphicon glyphicon-ok"></i>
+            Contact Us
+          <% end %>
+        </li>
         <li><%= link_to "About", about_path %></li>
       </ul>
     </div>
@@ -34,6 +39,9 @@
 
 
 <div class="container">
+  <% flash.each do |key,value| %>
+      <%= content_tag :div, value, class: "alert alert-#{key}" %>
+  <% end %>
   <%= yield %>
 </div>
 
