@@ -7,7 +7,7 @@ class ContactsController < ApplicationController
         @contact = Contact.new(contact_params)
         
         if @contact.save
-            name = params[:contacts][:name]
+            name = params[:contact][:name]
             email = params[:contact][:email]
             body = params[:contact][:comments]
             
@@ -23,6 +23,6 @@ class ContactsController < ApplicationController
     
     private
     def contact_params
-        params.require(:contact).permit(:name, :email, :comments)
+        params.require(:contact).permit(:name,:email,:comments)
     end
 end
