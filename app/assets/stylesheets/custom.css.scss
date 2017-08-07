@@ -16,7 +16,13 @@ background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, 
     color: #3ac122;
 }
 
+.plan-name {
+    color: #cc6206;
+}
 
+p.plan-name {
+    color: #9700c1;
+}
 
 @import "font-awesome-sprockets";
 @import "font-awesome";
