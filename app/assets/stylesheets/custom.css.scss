@@ -21,9 +21,12 @@ background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, 
 }
 
 p.plan-name {
-    color: #9700c1;
+    color: #207004;
 }
 
+.inline-item {
+    right: 30px;
+}
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "bootstrap-sprockets";
