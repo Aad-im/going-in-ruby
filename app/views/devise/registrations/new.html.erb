@@ -1,29 +1,27 @@
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <% if params[:plan] == '3'%>
+    <% if params[:plan] == '6'%>
       <h1 class="text-center plan-name">Pro Account</h1>
-      <p class ="text-center plan-name">Sign up for the pro account for $5/month and get access to contact information!</p>
+      <h2 class ="text-center plan-name">Sign up for the pro account for $5/month and get access to the community's contact information!</h2>
     <% elsif params[:plan] == '2' %>
       <h1 class="text-center plan-name">Basic Account</h1>
-      <p class="text-center plan-name">Sign up for free and get basic access to the community.</p>
+      <h2 class="text-center plan-name">Sign up for free and get basic access to the community.</h2>
     <% else %>
       
     <% end %>
   </div>
   <div class="col-md-6 col-md-offset-3">
-      <h2>Sign up</h2>
-      <% if params[:plan] == '3' %>
+      <% if params[:plan] == '6' %>
         <div class ="well">
+          <h2 class="sign-up">Create an account:</h2>
           <%= render "pro_form" %>
         </div>
         
-      <% elsif params[:plan] == '2' %>
+      <% else params[:plan] == '2' %>
         <div class ="well">
+          <h2 class="sign-up">Create an account:</h2>
           <%= render "basic_form" %>
         </div>
-        
-      <% else %>
-        <%= render "both_plan" %>
         
       <% end %>
         <%= render "devise/shared/links" %>

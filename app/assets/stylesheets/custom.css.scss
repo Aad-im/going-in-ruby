@@ -12,20 +12,26 @@ background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-
 background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.plan-name {
+    
+}
+
+h2.plan-name {
+    padding: 10px;
+    color: #089131;
+    border: 5px solid #8026a0;
+    border-radius: 2px;
+}
+
 #Intro {
     color: #3ac122;
 }
-
-.plan-name {
-    color: #cc6206;
+.sign-up {
+    color: #ff0048;
 }
 
-p.plan-name {
-    color: #207004;
-}
-
-.inline-item {
-    right: 30px;
+#contact {
+    color: #ad6400;
 }
 @import "font-awesome-sprockets";
 @import "font-awesome";
