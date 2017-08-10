@@ -12,10 +12,16 @@ background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-
 background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.plan-name {
-    
-}
 
+.alert-notice {
+    background-image: -webkit-linear-gradient(top,#dff0d8 0,#c8e5bc 100%);
+    background-image: -o-linear-gradient(top,#dff0d8 0,#c8e5bc 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#dff0d8),to(#c8e5bc));
+    background-image: linear-gradient(to bottom,#dff0d8 0,#c8e5bc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#ffc8e5bc', GradientType=0);
+    background-repeat: repeat-x;
+    border-color: #b2dba1;
+}
 h2.plan-name {
     padding: 10px;
     color: #9b422e;
@@ -23,16 +29,20 @@ h2.plan-name {
     border-radius: 5px;
 }
 
-#Intro {
-    color: #3ac122;
-}
+
 .sign-up {
     color: #ff0048;
+}
+
+#Intro {
+    color: #3ac122;
 }
 
 #contact {
     color: #ad6400;
 }
+
+
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "bootstrap-sprockets";
