@@ -13,11 +13,12 @@
     <div class="col-md-6">
       <div class="well">
         <h2 class="text-center">Your profile</h2>
-        <% if current_user.profile #If the user has a profile do this  %>
+        <% if current_user.profile #If the user has a profile do this %>
           <%= link_to "Edit your profile!", "#", class: "btn btn-danger btn-block" %><br/>
           <%= link_to "View your profile!", user_path(current_user), class: "btn btn-danger btn-block" %>
-        <% else %>  
-          <%= link_to "Create your profile!", new_user_profile_path(current_user) %>
+        <% else %>
+          <p class="community text-center">Create your profile to share your info with the community.</p>
+          <%= link_to "Create your profile!", new_user_profile_path(current_user), class: "btn btn-danger btn-block" %>
         <% end %>
       </div>
     </div>
@@ -25,7 +26,7 @@
     <div class="col-md-6">
       <div class="well">
         <h2 class="text-center">The Community</h2>
-        <p id="community">Visit the community to meet other developers,entrepreneuers, and investors!</p>
+        <p class="community">Visit the community to meet other developers,entrepreneuers, and investors!</p>
         <%= link_to "Visit the community", "#", class: "btn btn-success btn-block" %>
       </div>
     </div>
