@@ -12,13 +12,13 @@
   <% if user_signed_in? %>
     <div class="col-md-6">
       <div class="well">
-        <h2 class="text-center">Your profile</h2>
+        <h2 class="text-center">Your profile</h2><br/>
         <% if current_user.profile #If the user has a profile do this %>
-          <%= link_to "Edit your profile!", "#", class: "btn btn-danger btn-block" %><br/>
-          <%= link_to "View your profile!", user_path(current_user), class: "btn btn-danger btn-block" %>
+          <%= link_to "Edit your profile!", edit_user_profile_path(current_user), class: "btn btn-primary btn-block" %><br/>
+          <%= link_to "View your profile!", user_path(current_user), class: "btn btn-primary btn-block" %>
         <% else %>
           <p class="community text-center">Create your profile to share your info with the community.</p>
-          <%= link_to "Create your profile!", new_user_profile_path(current_user), class: "btn btn-danger btn-block" %>
+          <%= link_to "Create your profile!", new_user_profile_path(current_user), class: "btn btn-primary btn-block" %>
         <% end %>
       </div>
     </div>
