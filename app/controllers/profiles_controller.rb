@@ -1,6 +1,7 @@
 class ProfilesController < ApplicationController
     before_action :authenticate_user!
     before_action :only_current_user
+    
     def new
         #Form where user can fill out their own profile
         @user = User.find( params[:user_id] )
@@ -44,4 +45,5 @@ class ProfilesController < ApplicationController
         @user = User.find( params[:user_id] )
         redirect_to(root_url) unless @user == current_user
     end
+    
 end

@@ -1,9 +1,40 @@
-<%= image_tag @user.profile.avatar.url %><br/>
+<div class="row">
+    
+    <% unless current_user.plan_id == 6 %>
+        <div class="alert alert-warning alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span></button>
+            Switch to <strong>Pro</strong> to have access to the community's contact info
+        </div>
+    <% end %>
+    
+    <div class="col-md-3 text-center">
+        <%= image_tag @user.profile.avatar.url, class: "image" %>
+    </div>
+    
 
-<%= @user.profile.first_name %> <%= @user.profile.last_name %><br/>
-<%= @user.profile.job_title %><br/>
-<% if current_user.plan_id == '6' %>
-    <%= @user.profile.phone_number %><br/>
-    <%= @user.profile.contact_email %><br/>
-<% end %>
-<%= @user.profile.description %>
+    <div class="col-md-3">
+        <h1><%= @user.profile.first_name %> <%= @user.profile.last_name %></h1>
+        <h3><span class="job_title_icon"><%= job_title_icon %></span> 
+        <%= @user.profile.job_title %></h3><br/>
+    </div>    
+        
+    <div class="col-md-3">
+        <% if current_user.plan_id == 6 %>
+            <div class="well" id="contact-info">
+                <h4>Contact Information:</h4>
+                <strong><%= @user.profile.phone_number %><br/>
+                <%= @user.profile.contact_email %></strong>
+            </div>
+        <% end %>
+    </div>
+</div>
+    
+<div class="row">
+    <div class="col-md-7" id="description">
+        <h3>Description:</h3>
+        <div class="well profile-description">
+            <strong><%= @user.profile.description %></strong>
+        </div>
+    </div>
+</div>

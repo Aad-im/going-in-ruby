@@ -1,0 +1,61 @@
+h2.plan-name {
+    padding: 10px;
+    color: #00ff89;
+    border: 5px solid #8026a0;
+    border-radius: 5px;
+    background-color: #ce0383;
+}
+
+.description {
+    padding: 10px;
+    color: #00ff89;
+    border: 5px solid #8026a0;
+    border-radius: 5px;
+    background-color: #ce0383;
+    margin-bottom: 20px;
+}
+
+.description p {
+    color: #4fe7ff;
+    font-size: 18px;
+}
+
+.sign-up {
+    color: #ff0048;
+}
+
+.community {
+    font-size: 15px;
+    color: #8602c9;
+}
+
+.job_title_icon {
+    text-align: center;
+    display: inline-block;
+    width: 45px;
+    height: 30px;
+    border: 2px solid #b8efcc;
+    border-radius: 5px;
+    background-color: #c66a00;
+    color: #093782;
+}
+
+.well.profile-description {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.height-width {
+    height: 50px;
+    width: 40px;
+}
+
+.image {
+    -webkit-box-shadow: 6px -2px 24px 3px rgba(0,0,0,0.31);
+    -moz-box-shadow: 6px -2px 24px 3px rgba(0,0,0,0.31);
+    box-shadow: 6px -2px 24px 3px rgba(0,0,0,0.31);
+    width: 160px;
+    height: 150px;
+    border-radius: 50%;
+}

@@ -1,9 +1,9 @@
-body {
-    //Gradient from https://uigradients.com/
-background: #4CA1AF;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+// body {
+//     //Gradient from https://uigradients.com/
+// background: #4CA1AF;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+// }
 
 .navbar {
     //Gradient from https://uigradients.com/
@@ -21,51 +21,6 @@ background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, 
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#ffc8e5bc', GradientType=0);
     background-repeat: repeat-x;
     border-color: #b2dba1;
-}
-
-h2.plan-name {
-    padding: 10px;
-    color: #00ff89;
-    border: 5px solid #8026a0;
-    border-radius: 5px;
-    background-color: #ce0383;
-}
-
-.description {
-    padding: 10px;
-    color: #00ff89;
-    border: 5px solid #8026a0;
-    border-radius: 5px;
-    background-color: #ce0383;
-    margin-bottom: 20px;
-}
-
-.description p {
-    color: #4fe7ff;
-    font-size: 18px;
-}
-
-.sign-up {
-    color: #ff0048;
-}
-
-/*.profile-link {
-    text-decoration: none;
-    font-size: 20px;
-    color: #a82c1c;
-}*/
-
-.community {
-    font-size: 15px;
-    color: #8602c9;
-}
-
-#Intro {
-    color: #3ac122;
-}
-
-#contact {
-    color: #ad6400;
 }
 
 
