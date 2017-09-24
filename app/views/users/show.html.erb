@@ -20,7 +20,7 @@
     </div>    
         
     <div class="col-md-3">
-        <% if true#current_user.plan_id == 6 %>
+        <% if current_user.plan_id == 6 %>
             <div class="well" id="contact-info">
                 <h4>Contact Information:</h4>
                 <strong><%= @user.profile.phone_number %><br/>

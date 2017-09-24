@@ -59,3 +59,16 @@ h2.plan-name {
     height: 150px;
     border-radius: 50%;
 }
+
+.image-list {
+    -webkit-box-shadow: 6px -2px 24px 3px rgba(0,0,0,0.31);
+    -moz-box-shadow: 6px -2px 24px 3px rgba(0,0,0,0.31);
+    box-shadow: 6px -2px 24px 3px rgba(0,0,0,0.31);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.well.white-bg {
+    background-color: white;
+}
