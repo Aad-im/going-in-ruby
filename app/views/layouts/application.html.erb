@@ -26,8 +26,21 @@
         DevLink Bio
       <% end %>
     </div>
+    
     <div class="collapse navbar-collapse" id="main-nav-collapse">
+      <div class="nav navbar-nav navbar-right">
+        <% if user_signed_in? # If the user is signed in do this %>
+          <%= button_to "Sign Out", destroy_user_session_path, method: :delete,class: "btn btn-primary navbar-btn" %> 
+        <% else %>
+          <%= link_to "Log In", new_user_session_path, class: "btn btn-primary navbar-btn", method: :get %>
+        <% end %>
+      </div>
+      
       <ul class="nav navbar-nav navbar-right">
+          <% if user_signed_in? %>
+            <li><%= link_to "Your account", edit_user_registration_path %></li>
+            <li><%= link_to "The Community", users_path %></li>
+          <% end %>
         <li>
           <%= link_to new_contact_path do %>
             <i class="glyphicon glyphicon-ok"></i>
@@ -36,13 +49,6 @@
         </li>
         <li><%= link_to "About", about_path %></li>
       </ul>
-      <div class="nav navbar-nav navbar-right">
-        <% if current_user %>
-          <%= button_to "Sign Out", destroy_user_session_path, method: :delete,class: "btn btn-primary navbar-btn" %> 
-        <% else %>
-          <%= link_to "Log In", new_user_session_path, class: "btn btn-primary navbar-btn", method: :get %>
-        <% end %>
-      </div>
     </div>
 </nav>
 
