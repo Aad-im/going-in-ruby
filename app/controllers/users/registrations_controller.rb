@@ -5,7 +5,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
         super do |resource|
             if params[:plan]
                 resource.plan_id = params[:plan]
-                if resource.plan_id == '6'
+                if resource.plan_id == 6
                     resource.save_with_payment
                 else
                     resource.save
@@ -16,7 +16,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
     
     private
     def select_plan
-        unless params[:plan] && (params[:plan] == '2' || params[:plan] == '6')
+        unless params[:plan] && (params[:plan] == 2 || params[:plan] == 6)
             flash[:notice] = "Please select a membership plan to sign up."
             redirect_to root_url
         end
