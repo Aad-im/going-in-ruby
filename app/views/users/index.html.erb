@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-md-8 col-md-offset-2">
     <h1>The Devlink Community</h1>
-    <p>Welcome to our community, users must fill out a profile in order to join</p>
+    <p>Welcome to our community, users must fill out a profile in order to join.</p>
         <ul class="list-unstyled">
             <% @users.each do |u| %>
                 <% if u.profile %>
@@ -22,6 +22,10 @@
                                 
                                 <p>
                                     <%= u.profile.job_title %>
+                                    <% if u == current_user %>
+                                        <span id="no-text-decoration" class="inline-block label label-warning">Your Profile</span>
+                                    <% end %>
+                                    
                                     <% if u.plan_id == 6 %>
                                         <span class="label label-danger">Pro</span>
                                     <% end %>

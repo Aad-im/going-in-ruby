@@ -13,5 +13,4 @@ class UsersController < ApplicationController
         @users = User.includes(:profile)
     end
     
-    
 end

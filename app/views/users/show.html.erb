@@ -12,14 +12,16 @@
         <%= image_tag @user.profile.avatar.url, class: "image" %>
     </div>
     
-
-    <div class="col-md-3">
+    <div class="col-md-6" id="description">
         <h1><%= @user.profile.first_name %> <%= @user.profile.last_name %></h1>
         <h3><span class="job_title_icon"><%= job_title_icon %></span> 
         <%= @user.profile.job_title %></h3><br/>
-    </div>    
         
-    <div class="col-md-3">
+        <h3>Description:</h3>
+        <div class="well profile-description">
+            <strong><%= @user.profile.description %></strong>
+        </div>
+        
         <% if current_user.plan_id == 6 %>
             <div class="well" id="contact-info">
                 <h4>Contact Information:</h4>
@@ -27,14 +29,6 @@
                 <%= @user.profile.contact_email %></strong>
             </div>
         <% end %>
-    </div>
-</div>
-    
-<div class="row">
-    <div class="col-md-7" id="description">
-        <h3>Description:</h3>
-        <div class="well profile-description">
-            <strong><%= @user.profile.description %></strong>
-        </div>
+        
     </div>
 </div>

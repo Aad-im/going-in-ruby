@@ -5,6 +5,7 @@
     border: 5px solid #8026a0;
     border-radius: 5px;
     background-color: #ce0383;
+    margin-bottom: 30px;
 }
 
 .description {
@@ -25,6 +26,13 @@
     color: #ff0048;
 }
 
+.small-font {
+    font-size: 20px;
+}
+
+.inline-block {
+    display: inline-block;
+}
 .community {
     font-size: 15px;
     color: #8602c9;

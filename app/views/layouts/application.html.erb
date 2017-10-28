@@ -47,7 +47,25 @@
             Contact Us
           <% end %>
         </li>
-        <li><%= link_to "About", about_path %></li>
+        <li>
+          <a type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <%= link_to about_path do %>
+                About Us
+              <% end %>
+            </li>
+            <li role="separator" class="divider"></li>
+            <li>
+              <%= link_to how_made_path do %>
+                How The Site Was Made
+              <% end %>
+            </li>
+            
+          </ul>
+        </li>
       </ul>
     </div>
 </nav>
