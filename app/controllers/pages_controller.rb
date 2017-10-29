@@ -7,4 +7,8 @@ class PagesController < ApplicationController
     
     def about
     end
+    
+    def how_made_path
+    end
+    
 end
