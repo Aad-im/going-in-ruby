@@ -2,17 +2,17 @@
   <% if user_signed_in? %>
     <h1>Welcome <span style="color: #0c4299;">back</span>
     to <span style="color: #ff4444;">DevLink</span> Bio</h1>
-    <h3 id="Intro">A membership site where entrepreneuers can meet developers.</h3>
   <% else %>
     <h1>Welcome to <span style="color: #ff4444;">DevLink</span> Bio</h1>
-    <h3 id="Intro">A membership site where entrepreneuers can meet developers.</h3>
   <% end %>
+  <h3 id="Intro">A membership site where entrepreneuers can meet developers.</h3>
 </div>
 <div class="row">
   <% if user_signed_in? %>
     <div class="col-md-6">
       <div class="well">
-        <h2 class="text-center">Your profile</h2><br/>
+        <h2 class="text-center">Your profile</h2>
+        <hr/>
         <% if current_user.profile #If the user has a profile do this %>
           <%= link_to "Edit your profile!", edit_user_profile_path(current_user), class: "btn btn-primary btn-block" %><br/>
           <%= link_to "View your profile!", user_path(current_user), class: "btn btn-primary btn-block" %>
@@ -34,7 +34,7 @@
     <div class="col-md-6">
       <div class="well">
         <h2 class="text-center">Basic Membership</h2>
-        <h4 class="text-center">Sign up for free and get basic access to the community.</h4></br></br>
+        <h4 class="text-center">Sign up for free and get basic access to the community.</h4><hr/>
         <%= link_to "Sign up with Basic!", new_user_registration_path(plan: @basic_plan.id),class: "btn btn-primary btn-lg btn-block" %>
       </div>
     </div>
